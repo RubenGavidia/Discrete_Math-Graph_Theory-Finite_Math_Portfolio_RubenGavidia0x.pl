@@ -131,3 +131,27 @@ void muestra(){
 
 
 ```
+
+```
+
+  def __init__(self):
+        self.counter = 0
+
+  def hanoi(self, n, org, aux, dst):
+    """n: Number of disks (above a given level) to be moved
+       org: origin rod
+       dst: destination rod
+       aux: auxiliary rod
+       The key point to understand in the recursion is to think about the number of disks above a given level,
+       not the amount of disks below a given level"""
+    if n == 1: 
+       self.counter += 1
+       print('{0}->{1}'.format(org, dst))
+    else:
+       self.hanoi(n-1, org, dst, aux)
+       self.hanoi(1, org, aux, dst)
+       self.hanoi(n-1, aux, org, dst)
+
+tower = Tower()
+tower.hanoi(3, "org", "aux", "dst")
+```
