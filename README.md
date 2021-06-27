@@ -15,11 +15,11 @@ The problem was solved by means of a code made in the language of C programming,
 #define TORRE_AUXILIAR 2
 #define TORRE_FINAL 3
  
-int hanoi(int numDiscos, int torreInicial, int torreAuxiliar, int torreFinal);
+int hanoi(int numDiscos_RubenGavidia0x, int torreInicial_RubenGavidia0x, int torreAuxiliar_RubenGavidia0x, int torreFinal_RubenGavidia0x);
 void muestra();
  
-int t1=0,t2=0,t3=0,i,maxdiscos;
-char disko='O';
+int t1_RubenGavidia0x=0,t2_RubenGavidia0x=0,t3_RubenGavidia0x=0,i,maxdiscos_RubenGavidia0x;
+char disko_RubenGavidia0x='O';
  
 int main()
 {
@@ -31,7 +31,7 @@ int main()
  printf("\n_________________________________________ \n");
   
  if(seleccion == 1){	 
- 	t1=cantDiscos;
+ 	t1_RubenGavidia0x=cantDiscos;
  	maxdiscos = cantDiscos;
  	printf("La Torre:\n");
  	muestra();
@@ -65,67 +65,67 @@ else if(seleccion == 3){
 	return 1;}
 }
  
-int hanoi(int numDiscos, int torreInicial, int torreAuxiliar, int torreFinal)
+int hanoi(int numDiscos_RubenGavidia0x, int torreInicial_RubenGavidia0x, int torreAuxiliar_RubenGavidia0x, int torreFinal_RubenGavidia0x)
 {
     static int movimientos = 0;
- if(numDiscos == 1) // solo hay un disco
+ if(numDiscos_RubenGavidia0x == 1) // solo hay un disco
  {
-  printf("\n\n%d)Mover el disco superior de la torre %d a la torre %d\n", movimientos+1, torreInicial, torreFinal);
+  printf("\n\n%d)Mover el disco superior de la torre %d a la torre %d\n", movimientos+1, torreInicial_RubenGavidia0x, torreFinal_RubenGavidia0x);
   movimientos++;
  
-        if(torreInicial==1)
-            t1--;
-        if(torreInicial==2)
-            t2--;
-        if(torreInicial==3)
-            t3--;
-        if(torreFinal==1)
-            t1++;
-        if(torreFinal==2)
-            t2++;
-        if(torreFinal==3)
-            t3++;
+        if(torreInicial_RubenGavidia0x==1)
+            t1_RubenGavidia0x--;
+        if(torreInicial_RubenGavidia0x==2)
+            t2_RubenGavidia0x--;
+        if(torreInicial_RubenGavidia0x==3)
+            t3_RubenGavidia0x--;
+        if(torreFinal_RubenGavidia0x==1)
+            t1_RubenGavidia0x++;
+        if(torreFinal_RubenGavidia0x==2)
+            t2_RubenGavidia0x++;
+        if(torreFinal_RubenGavidia0x==3)
+            t3_RubenGavidia0x++;
  
   muestra();
  }
  else // mas de un disco
  {
 //recursividad: llama a la misma funcion nuevamente
-  hanoi(numDiscos - 1, torreInicial, torreFinal, torreAuxiliar);
-  printf("\n\n%d)Mover el disco superior de la torre %d a la torre %d\n", movimientos+1, torreInicial, torreFinal);
+  hanoi(numDiscos_RubenGavidia0x - 1, torreInicial_RubenGavidia0x, torreFinal_RubenGavidia0x, torreAuxiliar_RubenGavidia0x);
+  printf("\n\n%d)Mover el disco superior de la torre %d a la torre %d\n", movimientos+1, torreInicial_RubenGavidia0x, torreFinal_RubenGavidia0x);
   movimientos++;
  
-        if(torreInicial==1)
-            t1--;
-        if(torreInicial==2)
-            t2--;
-        if(torreInicial==3)
-            t3--;
-        if(torreFinal==1)
-            t1++;
-        if(torreFinal==2)
-            t2++;
-        if(torreFinal==3)
-            t3++;
+        if(torreInicial_RubenGavidia0x==1)
+            t1_RubenGavidia0x--;
+        if(torreInicial_RubenGavidia0x==2)
+            t2_RubenGavidia0x--;
+        if(torreInicial_RubenGavidia0x==3)
+            t3_RubenGavidia0x--;
+        if(torreFinal_RubenGavidia0x==1)
+            t1_RubenGavidia0x++;
+        if(torreFinal_RubenGavidia0x==2)
+            t2_RubenGavidia0x++;
+        if(torreFinal_RubenGavidia0x==3)
+            t3_RubenGavidia0x++;
  
   muestra();
-  hanoi(numDiscos - 1, torreAuxiliar, torreInicial, torreFinal);
+  hanoi(numDiscos_RubenGavidia0x - 1, torreAuxiliar_RubenGavidia0x, torreInicial_RubenGavidia0x, torreFinal_RubenGavidia0x);
  }
  return movimientos;
 } 
  
 void muestra(){
     printf("\n\tTorre1:");
- for(i=1;i<=t1;i++){
-        printf("%c",disko);
+ for(i=1;i<=t1_RubenGavidia0x;i++){
+        printf("%c",disko_RubenGavidia0x);
  }
     printf("\n\tTorre2:");
  for(i=1;i<=t2;i++){
-        printf("%c",disko);
+        printf("%c",disko_RubenGavidia0x);
  }
     printf("\n\tTorre3:");
  for(i=1;i<=t3;i++){
-        printf("%c",disko);
+        printf("%c",disko_RubenGavidia0x);
  }
 }
 
