@@ -1,9 +1,9 @@
 # Discrete_Math-Graph_Theory-Finite_Math_Portfolio_RubenGavidia0x.pl
-Logic, Set Theory, Number Theory, Combinatorics, Finite Mathematics, Graph Theory, Digital Geometry, Algorithmics, Information Theory, Computability and Complexity, Elementary Probability Theory, Linear Algebra, Functions, Markov Chains, Relations, Proofs, Partially Ordered Set.
+Logic, Set Theory, Number Theory, Combinatorics, Finite Mathematics, Graph Theory, Digital Geometry, Algorithmics, Information Theory, Computability and Complexity, Elementary Probability Theory, Linear Algebra, Functions, Markov Chains, Relations, Proofs, Partially Ordered Set, predicates, power sets, Cartesian products, Venn diagrams, proving that a function is one-to-one and onto, big O, proving statements using mathematical induction, recursive sequences.
 
 RECURRENCE PROJECT: RESOLUTION OF THE GAME OFTHE TOWER OF HANOI
 
-Implementation of a program in code (C language) that displays the numberof steps remaining to solve the juice of the towers of Hanoi, givenany position
+Implementation of a program in code (C language) that displays the number of steps remaining to solve the game of the towers of Hanoi, given any position
 
 ```
 /*The problem was solved by means of a code made in the 
